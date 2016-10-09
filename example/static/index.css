@@ -121,9 +121,30 @@ nav ul li{
 	height: 601px;
 	float:right;
 }
+.sect3-word{
+	padding:90px 0;
+	width: 720px;
+	float:left;
+	height: 601px;
+	padding-left: 30px;
+}
 
-
-
+.sect3-div{
+	width:323px;
+	height:212px;
+	border:1px solid #ccc;
+	float:left;
+}
+.sect3-div{
+	text-align: center;
+}
+.sect3-div img{
+	width: 40px;
+	height: 40px;
+}
+.sect3-div div{
+	color:#888888;
+}
 
 
 
