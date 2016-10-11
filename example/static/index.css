@@ -119,21 +119,29 @@ video{
 	background-color: #f5f5f5;
 	overflow:auto;
 }
-.sect3-img img{
+.sect3-img{
 	width: 520px;
+	width:32.5%;
 	height: 601px;
 	float:right;
 }
 .sect3-word{
 	width: 670px;
+	width:67%;
 	float:right;
 	height: 601px;
 	padding-top:45px;
+	position:relative;
 }
 .sect3-center{
+	position:absolute;
 	width: 670px;
 	height:600px;
 	margin: 0 auto;
+	left:50%;
+	top:50%;
+	margin-left:-335px;
+	margin-top:-300px;
 }
 .sect3-div{
 	width:230px;
@@ -160,25 +168,7 @@ video{
 	margin-top:20px;
 	line-height: 24px;
 }
-@media screen and (min-width: 1500px) {
-    .sect3-word {
-    	width:860px;
-    	
-    }
-    .sect3-div{
-    	margin:4% 8%;
-    }
-}
 
-@media screen and (min-width: 1800px) {
-    .sect3-word {
-    	width:950px;
-    	
-    }
-    .sect3-div{
-    	margin:4% 12%;
-    }
-}
 
 .section4{
 	height:976px;
@@ -368,7 +358,33 @@ video{
 	margin-top:20px
 	font-size:28px;
 }
-
+.section9{
+	height:651px;
+}
+.message{
+	width:49%;
+	height:651px;
+	float:left;
+	position:relative;
+}
+.map{
+	width:50%;
+	float:left;
+	height:651px;
+}
+.map img{
+	width:100%;
+}
+.formMess{
+	width:560px;
+	height:350px;
+	border:1px solid red;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-175px;
+	margin-left:-280px;
+}
 
 
 
