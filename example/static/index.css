@@ -1,7 +1,6 @@
 * {
     margin: 0 auto;
     padding: 0;
-    width: 100%;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -106,6 +105,9 @@ nav ul li{
 	color: #adadad;
 	margin-bottom: 90px;
 }
+video{
+	width:100%;
+}
 .video-div{
 	width: 1140px;
 	height: 600px;
@@ -115,6 +117,7 @@ nav ul li{
 .section3{
 	height: 602px;
 	background-color: #f5f5f5;
+	overflow:auto;
 }
 .sect3-img img{
 	width: 520px;
@@ -122,18 +125,21 @@ nav ul li{
 	float:right;
 }
 .sect3-word{
-	padding:90px 0;
-	width: 720px;
-	float:left;
+	width: 670px;
+	float:right;
 	height: 601px;
-	padding-left: 30px;
+	padding-top:45px;
 }
-
+.sect3-center{
+	width: 670px;
+	height:600px;
+	margin: 0 auto;
+}
 .sect3-div{
-	width:323px;
-	height:212px;
-	border:1px solid #ccc;
+	width:230px;
 	float:left;
+	height:212px;
+	margin:4%;
 }
 .sect3-div{
 	text-align: center;
@@ -142,16 +148,209 @@ nav ul li{
 	width: 40px;
 	height: 40px;
 }
-.sect3-div div{
+.sect3-title{
+	margin-top:35px;
+	font-size:12px;
+	letter-spacing: 10px;
+}
+.sect3-desc{
 	color:#888888;
+	font-size: 14px;
+	text-align: left;
+	margin-top:20px;
+	line-height: 24px;
+}
+@media screen and (min-width: 1500px) {
+    .sect3-word {
+    	width:860px;
+    	
+    }
+    .sect3-div{
+    	margin:4% 8%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .sect3-word {
+    	width:950px;
+    	
+    }
+    .sect3-div{
+    	margin:4% 12%;
+    }
+}
+
+.section4{
+	height:976px;
+	background-color: #333333;
+	position:relative;
+}
+.sect4-word{
+	margin-bottom:144px;
+	margin:0 auto;
+	width:360px;
+	color:#fff;
+	text-align: center;
+}
+.sect4-title{
+	font-size:12px;
+	padding-top:120px;
+	margin-bottom:18px;
+}
+.sect4-title2{
+	font-size:30px;
+	margin-bottom:32px;
+}
+.sect4-desc p{
+	font-size:14px;
+	line-height: 26px;
+}
+.sect4-desc{
+	margin-bottom: 36px;
+}
+
+.know{
+	background: url('./../images/立刻了解.png') center no-repeat;
+	height: 40px;
+	width: 200px;
+}
+.sect4-biao{
+	background: url('./../images/OT-5.png') center no-repeat;
+	height: 502px;
+	width: 402px;
+	margin: 0 auto;
+	bottom: 0px;
+	left:50%;
+	margin-left:-201px;
+	position: absolute;
+}
+.sect4B{
+	width:402px;
+	height:502px;
+	margin: 0 auto;
+	bottom: 0px;
+	left:50%;
+	margin-left:-201px;
+	position: absolute;
 }
 
 
+.imgdiv{
+	position:absolute;
+}
+.img15{
+	top:218px;
+	left:0px;
+}
+.img16{
+	top:0px;
+	left:83px;
+}
 
+.img18{
+	top:115px;
+	right:0px;
+}
 
+.img17{
+	top:476px;
+	right:0px;
+}
 
+@media screen and (max-width: 1400px) {
+	.section4{
+		height:832px;
+	}
+	.know{
+		background: url('./../images/立刻了解.png') center no-repeat;
+		height: 30px;
+		width: 150px;
+	}
+	.sect4B{
+		width:301px;
+		height:376px;
+		margin: 0 auto;
+		bottom: 0px;
+		left:50%;
+		margin-left:-150.5px;
+		position: absolute;
+	}
+	.imgdiv{
+		position:absolute;
+	}
+	.img15{
+		top:163px;
+		left:0px;
+		width:342px;
+		height:385px;
+	}
+	.img16{
+		top:0px;
+		left:62px;
+		width:300px;
+		height:257px;
+	}
 
+	.img18{
+		top:86px;
+		right:0px;
+		width:300px;
+		height:340px;
+	}
 
+	.img17{
+		top:357px;
+		right:0px;
+		width:315px;
+		height:354px;
+	}
+}
+.section6{
+	height:970px;
+	margin:0 auto;
+}
+.sect6-word{
+	padding-top:120px;
+	text-align: center;
+}
+.sect6-title{
+	font-size:10px;
+}
+.sect6-title2{
+	font-size:30px;
+	margin-top:18px;
+	margin-bottom:18px;
+}
+.sect6-desc{
+	margin-bottom: 80px;
+	font-size:12px;
+}
+.sect6-dai{
+	width:750px;
+	height:630px;
+	margin:0 auto;
+	position:relative;
+}
+.ds1{
+	position:absolute;
+	left:5%;
+}
+.ds2{
+	position:absolute;
+	left:25%;
+}
+.ds3{
+	position:absolute;
+	left:45%;
+}
+.ds4{
+	position:absolute;
+	left:65%;
+}
+.ds5{
+	position:absolute;
+	left:85%;
+}
 
 
 
