@@ -371,8 +371,13 @@ video{
 	width:50%;
 	float:left;
 	height:651px;
+	position:relative;
 }
 .map img{
+	position:absolute;
+	right:0;
+	top:50%;
+	margin-top:-325px;
 	width:100%;
 }
 .formMess{
@@ -386,7 +391,11 @@ video{
 	margin-left:-280px;
 }
 
-
+/*@media screen and (max-width: 1400px) {
+	.map img{
+	width:50%;
+}
+}*/
 
 
 
