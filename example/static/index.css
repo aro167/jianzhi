@@ -7,6 +7,9 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
       }
+ul, li{list-style: none;}
+a{outline: none; text-decoration: none;}
+a img{border: none;}
 body{
 	min-width: 1200px;
 }
@@ -33,7 +36,7 @@ nav{
 	margin-right: 70px;
 }
 nav ul{
-	width: 500px;
+	width: 600px;
 }
 nav ul li{
 	display: inline-block;
@@ -226,7 +229,6 @@ video{
 	position: absolute;
 }
 
-
 .imgdiv{
 	position:absolute;
 }
@@ -248,7 +250,19 @@ video{
 	top:476px;
 	right:0px;
 }
+.wrapper{position: relative; width:402px; height:502px; overflow: hidden;}
+		
+.slidePic{position:relative; width:402px; height:502px; overflow:hidden;}
+.slidePic li{display: none; position:absolute; width:402px; height:502px;}
+.slidePic li img{vertical-align: top; width:402px; height:502px;}
+.slidePic li span{position: absolute; display: block; width:402px; height:502px; line-height: 502px; text-align: center; font-size: 100px; color:#fff; font-weight: bold;}
 
+.slideNum{ position:absolute; left:50%;  bottom:5px; width: 300px; height: 24px; margin-left: -150px; text-align: center;}
+.slideNum li{display: inline-block; margin:0 3px; width:24px; height:24px; line-height: 24px;  text-align:center; background:#222; color:#FFF; cursor:pointer; border-radius:12px; font-size: 14px; *display: inline; *padding: 5px 8px; }
+.slideNum li.current{background:#CCC; cursor:default;}
+
+
+	
 @media screen and (max-width: 1400px) {
 	.section4{
 		height:832px;
@@ -259,14 +273,27 @@ video{
 		width: 150px;
 	}
 	.sect4B{
-		width:301px;
-		height:376px;
+		width:302px;
+		height:377px;
 		margin: 0 auto;
 		bottom: 0px;
 		left:50%;
-		margin-left:-150.5px;
+		margin-left:-151px;
 		position: absolute;
+		border:1px solid blue;
 	}
+.wrapper{position: relative; width:301px; height:376px; overflow: hidden;}
+		
+.slidePic{position:relative; width:301px; height:376px; overflow:hidden;}
+.slidePic li{display: none; position:absolute; width:301px; height:376px;}
+.slidePic li img{vertical-align: top; width:301px; height:376px;}
+.slidePic li span{position: absolute; display: block; width:301px; height:376px; line-height: 376px; text-align: center; font-size: 100px; color:#fff; font-weight: bold;}
+
+.slideNum{ position:absolute; left:50%;  bottom:5px; width: 300px; height: 24px; margin-left: -150px; text-align: center;}
+.slideNum li{display: inline-block; margin:0 3px; width:24px; height:24px; line-height: 24px;  text-align:center; background:#222; color:#FFF; cursor:pointer; border-radius:12px; font-size: 14px; *display: inline; *padding: 5px 8px; }
+.slideNum li.current{background:#CCC; cursor:default;}
+
+
 	.imgdiv{
 		position:absolute;
 	}
@@ -282,14 +309,12 @@ video{
 		width:300px;
 		height:257px;
 	}
-
 	.img18{
 		top:86px;
 		right:0px;
 		width:300px;
 		height:340px;
 	}
-
 	.img17{
 		top:357px;
 		right:0px;
@@ -297,6 +322,8 @@ video{
 		height:354px;
 	}
 }
+
+
 .section6{
 	height:970px;
 	margin:0 auto;

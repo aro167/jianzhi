@@ -118,31 +118,15 @@
 //     $('.dian').stop(true,true);
 // })
 // $(".img1").annimate({left:'200px'});
-$(document).ready(function(){
-    $(".point").mouseover(function(){
-        if ($(this).hasClass("selected")){
-            return;
-        }
-        var oldActive = $(".point.selected");
-        $(oldActive).removeClass("selected");
-        $(this).addClass("selected");
-
-        // $("#" + $(this).attr("data-tab")).stop(true,false).animate({left:'0'},2000);
-        // $("#" + $(oldActive).attr("data-tab")).stop(true,false).animate({left:'100%'},4000);
-
-        $("#" + $(this).attr("data-tab")).removeClass("hide");
-        $("#" + $(this).attr("data-tab")).addClass("show");
-        $("#" + $(oldActive).attr("data-tab")).removeClass("show");
-        $("#" + $(oldActive).attr("data-tab")).addClass("hide");
-        
-        // $("#" + $(oldActive).attr("data-tab")).hide();
-        // $("#" + $(this).attr("data-tab")).show();
-});
-
-
-//   $(".selected").click(function(){
-//     $(".img1").animate({left:'0'},2000);
-// });
-});
-
+var mySlide = new Slide({
+				el: 'wrapper',
+				// index: 2,
+				pointClass: 'slideNum',
+				pointEvent: 'mouseover',
+				auto: true,
+				delay: 4000,
+				duration: 500,
+				easing: 'easeInOut'
+			});
+	
 

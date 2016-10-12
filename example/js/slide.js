@@ -144,7 +144,7 @@
 			this.pointer = document.createElement('ul');
 			for (; i < this.length; i++) {
 				li = document.createElement('li');
-				li.innerHTML = i + 1;
+				
 				li.index = i;
 				this.points.push(li);
 				this.pointer.appendChild(li);
