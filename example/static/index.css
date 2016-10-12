@@ -448,8 +448,52 @@ video{
 	color:#fff;
 	text-align: center;
 }
+.test{
+	padding-top:200px;
+	height:700px;
+	background-color:#ccc;
+	text-align: center;
+}
+.point{
+	height:8px;
+	width:8px;
+	border-radius:4px;
+	background-color:#222;
+	display:inline-block;
+	margin:0 4px;
+	cursor:pointer;
+}
+.selected{
+	background-color: #fff;
+}
+.screen{
+	width:200px;
+	height:200px;
+	border:1px solid red;
+	position:relative;
+}
+#img1{
+	left:100%;
+}
+#img2,#img3,#img4{
+	left:100%;
+}
+#img1,#img2,#img3,#img4{
+	width:200px;
+	display:inline-block;
+	position:absolute;
+}
+.show{
+    animation('showImg', 1s)
+}
+.hide{
+	left:100%;
+}
 
-
-
-
+@keyframes showImg{
+	from {left: 100%;}
+	to {left: 0;}
+}
+    
+    
 

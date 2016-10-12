@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        
+        .imgs li {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+        
+        .imgs li.selected {
+            display: block;
+        }
+        
+        .btns ul {
+            position: fixed;
+            top: 38%;
+            left: 24%;
+        }
+        
+        .btns li {
+            float: left;
+            height: 20px;
+            width: 20px;
+            border: 2px solid #000;
+            margin: 2px;
+            text-align: center;
+        }
+        
+        .btns li.selected {
+            opacity: 0.3;
+        }
+        
+        .btns_pre {
+            background: url(images/sprite.png) no-repeat top left;
+            position: absolute;
+            top: 90px;
+            width: 40px;
+            height: 100px;
+        }
+        
+        .btns_next {
+            background: url(images/sprite.png) no-repeat top right;
+            position: absolute;
+            top: 90px;
+            left: 760px;
+            width: 40px;
+            height: 100px;
+        }
+    </style>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+</head>
+
+<body>
+    <div class="imgs">
+        <ul>
+            <li class="selected">
+                <a href="#" target="_blank"><img src="images/图片1.jpg" alt="1" /></a>
+            </li>
+            <li>
+                <a href="#" target="_blank"><img src="images/图片2.jpg" alt="2" /></a>
+            </li>
+            <li>
+                <a href="#" target="_blank"><img src="images/图片3.jpg" alt="3" /></a>
+            </li>
+            <li>
+                <a href="#" target="_blank"><img src="images/图片1.jpg" alt="4" /></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="btns">
+        <ul>
+            <li class="selected">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <div class="btns_pre btns_preNext"></div>
+        <div class="btns_next btns_preNext"></div>
+    </div>
+
+    <!-- <script type="text/javascript">
+        // $('.btns li').click(function(){
+        //     var $content=$('.imgs li').eq($('.btns li').index(this));
+        //     $content.addClass('selected');
+        //     $content.siblings().removeClass('selected');
+        // });
+        // $('.btns li').click(function(){
+        //     var $content=$(this);
+        //     $content.addClass('selected');
+        //     $content.siblings().removeClass('selected');
+        // });
+        $(function() {
+	        var len = $(".imgs li").length;
+	        var index = 0;
+
+	        $(".btns li").click(function() {
+		        index = $(".btns li").index(this);
+		        showPic(index);
+	    });
+        $('.btns_preNext').css('opacity','0.2').hover(function(){
+            $(this).stop(true,false).animate({"opacity":"0.5"},300);
+        },function() {
+            $(this).stop(true,false).animate({"opacity":"0.2"},300); 
+        });
+        $('.btns_pre').click(function(){
+            index-=1;
+            if(index==-1){index=len-1;}
+            showPic(index);
+        });
+        $('.btns_next').click(function(){
+            index+=1;
+            if(index==len){index=0;}
+            showPic(index);
+        });
+
+        // var picTimer;
+        // $('.btns').hover(function(){
+        //     clearInterval(picTimer);
+        // },function(){
+        //     picTimer=setInterval(function(){
+        //         showPic(index);
+        //         index++;
+        //         if(index==len){index=0;}
+        //     }3000);
+        // }).trigger('mouseleave');
+        var picTimer;
+        $(".btns").hover(function() {
+	        clearInterval(picTimer);
+        },function() {
+	            picTimer = setInterval(function() {
+		        showPic(index);
+		        index++;
+		        if(index==len) {index=0;}
+	       },2000);
+        }).trigger("mouseleave");
+
+
+	    function showPic(index) {
+		    $(".imgs li").removeClass("selected").eq(index).addClass("selected");
+		    $(".btns li").removeClass("selected").eq(index).addClass("selected");
+	    }
+        });
+
+    </script> -->
+</body>
+
+</html>
