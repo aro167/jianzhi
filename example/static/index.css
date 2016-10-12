@@ -344,7 +344,7 @@ video{
 
 .section8{
 	height:300px;
-	background-color:#000;
+	background-color:#222222;
 	margin:0 auto;
 	text-align: center;
 	color:#fff;
@@ -360,6 +360,7 @@ video{
 }
 .section9{
 	height:651px;
+	position:relative;
 }
 .message{
 	width:49%;
@@ -367,17 +368,20 @@ video{
 	float:left;
 	position:relative;
 }
-.map{
+/*.map{
 	width:50%;
 	float:left;
 	height:651px;
-	position:relative;
-}
-.map img{
+	position:absolute;
+}*/
+.map{
 	position:absolute;
 	right:0;
 	top:50%;
 	margin-top:-325px;
+	width:50%;
+}
+.map img{
 	width:100%;
 }
 .formMess{
@@ -390,12 +394,59 @@ video{
 	margin-top:-175px;
 	margin-left:-280px;
 }
-
-/*@media screen and (max-width: 1400px) {
-	.map img{
-	width:50%;
+.formMess p{
+	line-height: 90px;
 }
-}*/
+.tx-v{
+	width:268px;
+	height:72px;
+	display:inline-block;
+}
+.tx-v span{
+	display:block;
+	font-size:10px;
+	margin-bottom:10px;
+}
+.tx-v input{
+	width:266px;
+	height:42px;
+}
+.tx-v .input-l{
+	width:546px;
+}
+.tx-v textarea{
+	width:546px;
+	height:134px;
+	border-color:#ccc;
+	resize:none;
+}
+.footer{
+	color:#fff;
+	height:408px;
+	background-color:#222222;
+	text-align: center;
+}
+.footer-logo{
+	padding-top:120px;
+	margin:0 auto;
+	text-align: center;
+}
+
+.footer-a{
+	padding-top:36px;
+	padding-bottom: 88px;
+	width:600px;
+}
+.footer-a a{
+	display:inline-block;
+	text-decoration: none;
+	font-size:14px;
+	width:100px;
+	text-align: center;
+}
+.footer-v{
+	padding-bottom:118px;
+}
 
 
 
