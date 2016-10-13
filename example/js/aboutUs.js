@@ -1,4 +1,4 @@
 // JavaScript Document
 $(function(){
-	TouchSlide({ slideCell:"#tabBox1" ,effect:"leftLoop",autoPlay:true});
+	TouchSlide({ slideCell:"#tabBox1" ,effect:"leftLoop",autoPlay:true,delay: 3000,});
 })
