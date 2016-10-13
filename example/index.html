@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./static/index.css">
     <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
 </head>
@@ -95,11 +95,19 @@
             <div class="sect4-desc"><p>这个非常好非常好，非常好非，常好非常好</p><p>这个非常好，吐槽，图层我始终固然的</p></div>
             <div class="know"></div>
         </div>
-        <img src="images/OT-5.png" class="sect4B"/>
-
-        <!-- <div class="sect4-biao">
-            
-        </div> -->
+		<div class="sect4B">
+			<div class="wrapper" id="wrapper">
+				<ul class="slidePic">
+					<li><a href="#01"><img src="images/OT-1.png" /></a></li>
+					<li><a href="#02"><img src="images/OT-2.png" /></a></li>
+					<li><a href="#03"><img src="images/OT-3.png" /></a></li>
+					<li><a href="#03"><img src="images/OT-4.png" /></a></li>
+				</ul>
+				<a href="javascript:;" class="leftBtn" id="leftBtn">&lt;</a>
+				<a href="javascript:;" class="rightBtn" id="rightBtn">&gt;</a>
+			</div>
+		</div>
+		
     </div>
     <div class="section6">
         <div class="sect6-word">
@@ -123,12 +131,66 @@
 	<div class="section9">
 		<div class="message">
 			<div class="formMess">
+            <p>
+                <div class="tx-v">
+                    <span>Name</span>
+                    <input type="text" name="UserName"/>
+                </div>
+                <div class="tx-v">
+                    <span>E-mail</span>
+                    <input type="text" name="email"/>
+                </div>
+            </p>
+            <p>
+                <div class="tx-v">
+                    <span>SUBJECT</span>
+                    <input type="text" name="subject" class="input-l"/>
+                </div>
+            </p>  
+            <p>
+                <div class="tx-v">
+                    <span>Message</span>
+                        <textarea></textarea>
+                </div>
+            </p>   
 			</div>
 		</div>
 		<div class="map">
 			<img src="images/Address.jpg"/>
 		</div>
 	</div>
-</body>
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="images/Milton Logo.png" alt="logo"/>
+        </div>
+        <div class="footer-a">
+            <a href="#" >你好show</a>
+            <a href="#" >你好</a>
+            <a href="#" >你好</a>
+            <a href="#" >你好</a>
+            <a href="#" >你好首页</a>
+        </div>
+        <div class="footer-v">
+            &copy;某某某某某某某某某某某某某
+        </div>
+    </div>
+    <div class="test">
+        <div>
+            <div class="point selected" data-tab="img1"></div>
+            <div class="point" data-tab="img2"></div>
+            <div class="point" data-tab="img3"></div>
+            <div class="point" data-tab="img4"></div>
+
+        </div>
+        <div class="screen">
+            <img src="images/DS1.png" id="img1"/>
+            <img src="images/DS2.png" id="img2"/>
+            <img src="images/DS3.png" id="img3"/>
+            <img src="images/DS4.png" id="img4"/>
+        </div>
+        
+    </div>
+	<script type="text/javascript" src="js/slide.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
+</body>
 </html>
