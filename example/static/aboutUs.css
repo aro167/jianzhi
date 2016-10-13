@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin: 0 auto;padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;box-sizing: border-box;}
+body {background:url(../images/aboutUsbg.jpg); background-repeat:no-repeat; background-attachment:fixed; min-width: 1200px;} 
+.active{border-bottom: 2px solid #9562ff;}
+.tabBox{ position:relative;}
+.tabBox .hd{ height:40px; line-height:40px; padding:0 10px; font-size:20px; position:absolute; right:50px; bottom:20px;z-index: 9;}
+.tabBox .hd ul{ position:absolute; height:41px; top:0; overflow:hidden;  }
+.tabBox .hd ul li{ float:left; padding:0 10px; color:#fff;  }
+.tabBox .hd ul .on{}
+.tabBox .bd ul{ padding:10px 0 10px 10px;  }
+.tabBox .bd li{ }
+.tabBox .bd li img{ width:100%;}
