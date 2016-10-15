@@ -159,7 +159,17 @@ $(document).ready(function(){
 		$('.search').hide();
 		$('.inputdis').show();
 	});
-	
+	$(".xxx").click(function(){
+		$('#dowebok').addClass('bounce');
+		$("nav>ul>li").each(function(){
+			$(this).removeClass("animated fadeOutLeft");
+			$(this).addClass("animated fadeInLeft");
+		});
+		
+		
+		$('.search').show();
+		$('.inputdis').hide();
+	});
 	
 });
 
