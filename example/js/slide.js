@@ -144,7 +144,6 @@
 			this.pointer = document.createElement('ul');
 			for (; i < this.length; i++) {
 				li = document.createElement('li');
-				
 				li.index = i;
 				this.points.push(li);
 				this.pointer.appendChild(li);
@@ -160,9 +159,11 @@
 			}
 			this.elements[this.index].style.left = 0;
 			this.elements[this.index].className += ' ' + this.current;
+			
+			
 			this.elements[this.index].style.display = 'block';
 			if (this.lazyLoad) this._loadIMG(this.elements[this.index]);
-			if (this.pointShow) this.points[this.index].className += ' ' + this.current;
+			if (this.pointShow) {this.points[this.index].className += ' ' + this.current; console.log(this.index);}
 		},
 		_bind: function() {
 			var _this = this;
@@ -181,6 +182,7 @@
 			var _this = this,
 				timer = null;
 			this.on(this.pointer, this.pointEvent, function(e) {
+				console.log(_this.index);
 				if (_this.amimated) return;
 				var e = e || window.event,
 					target = e.target || e.srcElement;
@@ -256,6 +258,7 @@
 			if (this.amimated) return;
 			this.index++;
 			this._slide();
+			
 		},
 		slideRight: function() {
 			if (this.amimated) return;

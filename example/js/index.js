@@ -124,9 +124,45 @@ var mySlide = new Slide({
 				pointClass: 'slideNum',
 				pointEvent: 'mouseover',
 				auto: true,
-				delay: 4000,
+				delay: 2000,
 				duration: 500,
 				easing: 'easeInOut'
-			});
+});
+$(function(){
+	TouchSlide({ slideCell:"#tabBox1" ,effect:"leftLoop",autoPlay:true,delay: 3000,});
+})
+$(document).ready(function(){
+$("nav>ul>li").mouseover(function(){
+	if($(this).hasClass("active")){
+		return;
+	}
+	var oldActive = $('.active');
+	oldActive.removeClass('active');
+	$(this).addClass('active');
+});
+
+$(".slidePic").change(function(){
+	console.log($(this));
+	if ($(this).hasClass("active")){
+	return;
+	}
+	var oldActive = $("#content4 .tabs div.active");
+	$(oldActive).removeClass("active");
+	$(this).addClass("active");
+	$("#" + $(oldActive).attr("data-tab")).hide();
+	$("#" + $(this).attr("data-tab")).show();
+
+});
+
+$('.slidePic>li').on('change',function(){
+console.log('d');
+        if($(this).hasClass(' current')){
+			console.log('d');
+		}
+});
 	
+	
+
+});
+
 

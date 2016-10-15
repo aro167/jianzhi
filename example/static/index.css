@@ -13,8 +13,17 @@ a img{border: none;}
 body{
 	min-width: 1200px;
 }
+.clearfix{ content:""; display:inline-block; clear:both;}
+.tabBox{ position:relative;}
+.tabBox .hd{ height:40px; line-height:40px; padding:0 10px; font-size:20px; position:absolute; right:130px; bottom:30px;z-index: 9;}
+.tabBox .hd ul{width:120px; position:absolute; height:41px; top:0;  overflow:hidden;  }
+.tabBox .hd ul li{ float:left; padding:0 10px; color:#fff;  }
+.tabBox .bd li img{ width:100%;}
+.tabBox .hdwatch{ height:484px; width:835px;position:absolute; z-index: 9;margin: 0 auto;left:50%;margin-left:-427px;}
+.tabBox .hdHeader{ height:140px; width:100%;position:absolute; z-index: 10;margin: 0 auto;left:0;top:0;}
+
 .bgimg{
-	background: url('./../images/图片1.jpg') center no-repeat;
+	background-color:#222;
 	width: 100%;
 	height: 1080px;
 }
@@ -66,7 +75,6 @@ nav ul li{
 	color: #fff;
 }
 .watch{
-	background: url('./../images/watch video.png') center no-repeat;
 	height: 40px;
 	width: 200px;
 	margin-top: 260px;
@@ -180,6 +188,9 @@ video{
 	background-color: #333333;
 	position:relative;
 }
+#biao2,#biao3,#biao4{
+	display:none;
+}
 .sect4-word{
 	margin-bottom:144px;
 	margin:0 auto;
@@ -280,7 +291,6 @@ video{
 		left:50%;
 		margin-left:-151px;
 		position: absolute;
-		border:1px solid blue;
 	}
 .wrapper{position: relative; width:301px; height:376px; overflow: hidden;}
 		
