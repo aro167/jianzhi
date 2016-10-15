@@ -175,8 +175,20 @@ $(document).ready(function(){
 		$('#d1s').addClass("animated rubberBand");
 		$('#d2s').addClass("animated rubberBand");
 		$('#d3s').addClass("animated rubberBand");
+		
 		}
 	});
+	
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > $('.section5').offset().top) {
+		
+		$('.desc1').addClass("animated fadeInUp");
+		
+		
+		}
+	});
+	
+	
 		
 });
 
