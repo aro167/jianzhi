@@ -170,7 +170,14 @@ $(document).ready(function(){
 		$('.search').show();
 		$('.inputdis').hide();
 	});
-	
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > $('.section6').offset().top) {
+		$('#d1s').addClass("animated rubberBand");
+		$('#d2s').addClass("animated rubberBand");
+		$('#d3s').addClass("animated rubberBand");
+		}
+	});
+		
 });
 
 
