@@ -124,11 +124,12 @@
 		this.lazyLoad = !!opts.lazyLoad || false;
 		this.attribute = opts.attribute || '_src';
 		this.current = opts.current || 'current';
-
+	
 		this.pointShow = opts.pointShow === false ? false : true;
 		this.pointClass = opts.pointClass || 'slide-point';
 		this.pointEvent = opts.pointEvent || 'click';
 		this.points = [];
+		this.pointDesc = [];
 
 		this._init();
 	};
@@ -142,6 +143,7 @@
 			var li = null,
 				i = 0;
 			this.pointer = document.createElement('ul');
+			this.pointDesc = $('.biaoDesc');
 			for (; i < this.length; i++) {
 				li = document.createElement('li');
 				li.index = i;
@@ -163,7 +165,8 @@
 			
 			this.elements[this.index].style.display = 'block';
 			if (this.lazyLoad) this._loadIMG(this.elements[this.index]);
-			if (this.pointShow) {this.points[this.index].className += ' ' + this.current; console.log(this.index);}
+			if (this.pointShow) this.points[this.index].className += ' ' + this.current;
+			if (this.pointShow) this.pointDesc[this.index].className += ' ' + 'ssp';
 		},
 		_bind: function() {
 			var _this = this;
@@ -182,7 +185,6 @@
 			var _this = this,
 				timer = null;
 			this.on(this.pointer, this.pointEvent, function(e) {
-				console.log(_this.index);
 				if (_this.amimated) return;
 				var e = e || window.event,
 					target = e.target || e.srcElement;
@@ -192,9 +194,11 @@
 						timer = setTimeout(function() {
 							_this.index = target.index;
 							_this._slide();
+							console.log(_this.index);
 						}, 200);
 						return;
 					}
+					
 					_this.index = target.index;
 					_this._slide();
 				}
@@ -240,6 +244,8 @@
 			if (this.lazyLoad) this._loadIMG(this.elements[this.index]);
 			if (this.pointShow) {
 				this.points[this.index].className += ' ' + this.current;
+				this.pointDesc[this.index].className += ' ' + 'ssp';
+				this.pointDesc[this.oIndex].className = this.pointDesc[this.oIndex].className.replace('ssp', '');
 				this.points[this.oIndex].className = this.points[this.oIndex].className.replace(this.current, '');
 			}
 			this._animate(this.elements[this.oIndex], 'left', -distance);

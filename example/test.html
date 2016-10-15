@@ -11,10 +11,9 @@
 		a img{border: none;}
 		body{font-family: "Microsoft Yahei";}
 		
-		.wrapper{position: relative; margin: 50px auto; width:402px; height:502px; overflow: hidden;}
-		
-		.slidePic{position:relative; width:402px; height:502px; overflow:hidden;}
-		.slidePic li{display: none; position:absolute; width:402px; height:502px;}
+		.wrapper{position: relative; margin: 50px auto; width:402px; height:502px; }
+		.slidePic{position:relative; width:402px; height:502px; }
+		.slidePic li{ position:absolute; width:402px; height:502px;}
 		.slidePic li img{vertical-align: top; width:402px; height:502px;}
 		.slidePic li span{position: absolute; display: block; width:402px; height:502px; line-height: 502px; text-align: center; font-size: 100px; color:#fff; font-weight: bold;}
 		
@@ -28,11 +27,33 @@
 		.wrapper .leftBtn:hover, .wrapper a.rightBtn:hover{opacity: 1; filter:alpha(opacity=100);}
 		.wrapper .leftBtn:hover{background-position: 0 -58px;} 
 		.wrapper .rightBtn:hover{background-position: -30px -58px;}
+		
 	</style>
 
 </head>
 <body>
-
+<div class="biaoDesc">
+				<div class="sect4-title">NEW</div>
+				<div class="sect4-title2">O T - 1 绿光碳</div>
+				<div class="sect4-desc"><p>在夜晚，不经意间从锻造碳下流露出丝丝荧光，创新而独显曼妙</p></div>
+			</div>
+			<div class="biaoDesc">
+				<div class="sect4-title">NEW</div>
+				<div class="sect4-title2">O T - 4 锻造碳</div>
+				<div class="sect4-desc"><p>熔炼高温高压下独一无二的纹路，搭配深邃皇家蓝色，夺目而闪耀</p></div>
+			</div>
+			<div class="biaoDesc">
+				<div class="sect4-title">NEW</div>
+				<div class="sect4-title2">O T - 5 青铜款</div>
+				<div class="sect4-desc"><p>表圈、表冠采用青铜材质，微珠喷砂后更显细腻
+搭配复古棕色皮带，更显古着新潮流
+</p></div>
+			</div>
+			<div class="biaoDesc">
+				<div class="sect4-title">NEW</div>
+				<div class="sect4-title2">O T - 6 橙纹款</div>
+				<div class="sect4-desc"><p>表圈采用橙色树脂混合锻造碳材质，激情活力充满生趣</p></div>
+			</div>
 	<div class="wrapper" id="wrapper">
 		<ul class="slidePic">
 			<li><span>1</span><a href="#01"><img src="images/OT-1.png" /></a></li>
@@ -43,6 +64,7 @@
 		<a href="javascript:;" class="leftBtn" id="leftBtn">&lt;</a>
 		<a href="javascript:;" class="rightBtn" id="rightBtn">&gt;</a>
 	</div>
+	<script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
 	<script type="text/javascript" src="js/slide.js"></script>
 	<script type="text/javascript">
 		var leftBtn = document.getElementById('leftBtn'),
@@ -63,23 +85,7 @@
 		rightBtn.onclick = function() {
 			mySlide.slideRight();
 		};
-		var leftBtn2 = document.getElementById('leftBtn2'),
-			rightBtn2 = document.getElementById('rightBtn2'),
-			mySlide2 = new Slide({
-				el: 'wrapper2',
-				pointClass: 'slideNum',
-				pointEvent: 'mouseover',
-				lazyLoad: true,
-				attribute: 'data-src',
-				duration: 600,
-				easing: 'easeOut'
-			});
-		leftBtn2.onclick = function() {
-			mySlide2.slideLeft();
-		};
-		rightBtn2.onclick = function() {
-			mySlide2.slideRight();
-		};
+		
 	</script>
 
 </body>

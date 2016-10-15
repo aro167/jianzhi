@@ -132,37 +132,35 @@ $(function(){
 	TouchSlide({ slideCell:"#tabBox1" ,effect:"leftLoop",autoPlay:true,delay: 3000,});
 })
 $(document).ready(function(){
-$("nav>ul>li").mouseover(function(){
-	if($(this).hasClass("active")){
-		return;
-	}
-	var oldActive = $('.active');
-	oldActive.removeClass('active');
-	$(this).addClass('active');
-});
-
-$(".slidePic").change(function(){
-	console.log($(this));
-	if ($(this).hasClass("active")){
-	return;
-	}
-	var oldActive = $("#content4 .tabs div.active");
-	$(oldActive).removeClass("active");
-	$(this).addClass("active");
-	$("#" + $(oldActive).attr("data-tab")).hide();
-	$("#" + $(this).attr("data-tab")).show();
-
-});
-
-$('.slidePic>li').on('change',function(){
-console.log('d');
-        if($(this).hasClass(' current')){
-			console.log('d');
+	$("nav>ul>li").mouseover(function(){
+		if($(this).hasClass("active")){
+			return;
 		}
-});
-	
-	
+		var oldActive = $('.active');
+		oldActive.removeClass('active');
+		$(this).addClass('active');
+	});
 
+	$(".desc3").mouseover(function(){
+		$(".desc4").show();
+	});
+	$(".desc3").mouseout(function(){
+		$(".desc4").hide();
+	});
+	
+	$(".search").click(function(){
+		$("nav>ul>li").each(function(){
+			$(this).addClass("animated fadeOutLeft");
+		});
+		
+		setTimeout(function(){
+			$('#dowebok').removeClass('bounce');
+		}, 2000);
+		$('.search').hide();
+		$('.inputdis').show();
+	});
+	
+	
 });
 
 
