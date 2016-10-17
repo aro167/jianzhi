@@ -16,9 +16,10 @@ body{
 }
 .clearfix:after{ content:""; display:inline-block; clear:both;}
 .tabBox{ position:relative;}
-.tabBox .hd{ height:40px; line-height:40px; padding:0 10px; font-size:20px; position:absolute; right:160px; bottom:30px;z-index: 9;}
-.tabBox .hd ul{width:155px; position:absolute; height:41px; top:0;  overflow:hidden;  }
-.tabBox .hd ul li{ float:left; padding:0 10px; color:#fff;  }
+.tabBox .hd{ height:30px; line-height:30px; padding:0 10px; font-size:20px; position:absolute; right:160px; bottom:30px;z-index: 9;}
+.tabBox .hd ul{width:155px; position:absolute; height:31px; top:0;  overflow:hidden;  }
+.tabBox .hd ul li{ float:left; padding:0 10px; color:#fff;cursor: pointer;}
+.tabBox .hd  .on{border-left:2px solid #ccc; }
 .tabBox .bd li img{ width:100%;}
 .tabBox .hdwatch{ height:484px; width:835px;position:absolute; z-index: 9;margin: 0 auto;left:50%;margin-left:-427px;}
 .tabBox .hdHeader{ height:140px; width:100%;position:absolute; z-index: 10;margin: 0 auto;left:0;top:0;}
@@ -53,9 +54,7 @@ nav ul li{
 	margin: 0 15px;
 	color: #fff;
 	text-align: center;
-<<<<<<< HEAD
 	cursor:pointer;
-=======
 	cursor: pointer;
 }
 .xxx{
@@ -63,9 +62,8 @@ nav ul li{
 	left:10px;
 	top:-8px;
 	cursor: pointer;
-	
->>>>>>> 18e9a78b835da14e33e306fe0e4b6f27ef7b7ce5
 }
+
 .dap{
 	position:relative;
 }
@@ -89,18 +87,19 @@ nav ul li{
 	display:none;
 	position:absolute;
 	left:0;
-	top:0;
+	top:50%;
+	margin-top:-25px;
 	
 }
 .showSearch{
-	background: url('./../images/Search copy 3.png') left center no-repeat;
+    background: url('./../images/Search copy 3.png') 10px center no-repeat;
 	height: 50px;
 	width: 80%;
 	float: left;
 	line-height: 20px;
 	border:1px solid #ccc;
 	padding:15px 20px ; 
-	color:#fff;
+	color:#000;
 }
 .active{
 	border-bottom: 2px solid #9562ff;
@@ -248,6 +247,7 @@ video{
 }
 .biaoDesc{
 	display:none;
+	height:250px;
 }
 .ssp{
 	display:block;
@@ -259,9 +259,25 @@ video{
 	color:#fff;
 	text-align: center;
 }
+.pointIndex{
+	padding-top:30px;
+	height:60px;
+	text-align:center;
+	margin: 0 auto;
+}
+.pointIndex .point{
+	display:inline-block;
+	width:10px;
+	height:10px;
+	background-color:#878787;
+	cursor: pointer;
+}
+.pointIndex .curentPoint {
+background-color:#fff;
+}
 .sect4-title{
 	font-size:12px;
-	padding-top:120px;
+	padding-top:60px;
 	margin-bottom:18px;
 }
 .sect4-title2{
@@ -277,9 +293,15 @@ video{
 }
 
 .know{
-	background: url('./../images/立刻了解.png') center no-repeat;
-	height: 40px;
-	width: 200px;
+	height: 30px;
+	line-height:30px;
+	width: 150px;
+	color:#000;
+	border:1px solid #000;
+	border-radius:10px;
+	background-color:#fff;
+	text-align:center;
+	cursor:pointer;
 }
 .sect4-biao{
 	background: url('./../images/OT-5.png') center no-repeat;
@@ -331,18 +353,13 @@ video{
 
 .slideNum{ position:absolute; left:50%;  bottom:5px; width: 300px; height: 24px; margin-left: -150px; text-align: center;}
 .slideNum li{display: inline-block; margin:0 3px; width:24px; height:24px; line-height: 24px;  text-align:center; background:#222; color:#FFF; cursor:pointer; border-radius:12px; font-size: 14px; *display: inline; *padding: 5px 8px; }
-.slideNum li.current{background:#CCC; cursor:default;}
+.slideNum li.current{background:#fff; cursor:default;}
 
 
 	
 @media screen and (max-width: 1400px) {
 	.section4{
 		height:832px;
-	}
-	.know{
-		background: url('./../images/立刻了解.png') center no-repeat;
-		height: 30px;
-		width: 150px;
 	}
 	.sect4B{
 		width:302px;
