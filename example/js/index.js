@@ -4,12 +4,12 @@ var mySlide = new Slide({
 				//pointClass: 'slideNum',
 				pointEvent: 'mouseover',
 				auto: true,
-				delay: 2000,
-				duration: 500,
-				easing: 'easeInOut'
+				delay: 4000,
+				duration: 2000,
+				easing: 'easeInOutQuad'
 });
 $(function(){
-	TouchSlide({ slideCell:"#tabBox1" ,effect:"leftLoop",autoPlay:true,delay: 3000,});
+	TouchSlide({ slideCell:"#tabBox1" ,effect:"leftLoop",autoPlay:true,interTime: 5000,});
 })
 $(document).ready(function(){
 	$("nav>ul>li").mouseover(function(){
@@ -27,9 +27,7 @@ $(document).ready(function(){
 	$(".desc3").mouseout(function(){
 		$(".desc4").hide();
 	});
-	$(".showSearch").click(function(){
-		$(".showSearch").css({"background":none});
-	});
+	
 	$(".search").click(function(){
 		$("nav>ul>li").each(function(){
 			$(this).addClass("animated fadeOutLeft");
@@ -56,7 +54,6 @@ $(document).ready(function(){
 		if ($(window).scrollTop() > $('.section6').offset().top-200) {
 		$('#d1s').addClass("animated rubberBand");
 		$('#d2s').addClass("animated rubberBand");
-		$('#d3s').addClass("animated rubberBand");
 		
 		}
 	});
@@ -93,7 +90,13 @@ $(document).ready(function(){
 		}
 	});
 	
-		
+	$(".showSearch").on('click',function(){
+		$('.searchBox').show();
+	});
+	$(".showSearch").on('keyup',function(){
+		$('.default').hide();
+		$('.searchResult').show();
+	});
 });
 
 
