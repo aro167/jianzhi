@@ -34,3 +34,16 @@ input[type="search"] {-webkit-appearance: none;}
 .searchBox a .city{ width:55px; display:inline-block;}
 .searchBox a .storeName{ width:200px; display:inline-block;}
 .searchBox i{ font-style:normal; margin-left:10px; display:inline-block;}
+.aboutWatchbg{ background:url(../images/watchbg.jpg) no-repeat; background-size:100%;  background-attachment:fixed; }
+.aboutWatch{ width:1066px; height:627px;margin:0 auto 0;}
+.watchLeft{ width:530px; float:left;}
+.leftBot{ margin:0 0 0 -46px; padding-bottom:11px;}
+.watchRight{ display:inline-block; }
+.watchRight .watchRight_tit{ padding:40px 133px 50px 0; line-height:1; font-size:60px; color:#fff;}
+.watchRight .watchRight_tit span{ margin-left:72px;}
+.watchRight .watchRight_pri{ width:320px; height:40px; margin-right:140px !important;line-height:40px; padding:0 0 0 144px; background:url(../images/price.png) left center no-repeat; background-size:135px 37px; font-size:25px; color:#fff; text-align:right; }
+.watchRight .watchRight_pri span{ font-size:15px;}
+.watchRight .watches{ padding-left:143px; margin-top:180px;}
+.watchRight .watches img{ margin-left:25px;}
+.watchRight .watches p{ line-height:1; font-size:14px; color:#fff; padding:0 0 0 52px; margin-top:10px;}
+.watchRight .watches p span{ margin-left:91px;}
