@@ -1,7 +1,7 @@
 var mySlide = new Slide({
 				el: 'wrapper',
 				// index: 2,
-				//pointClass: 'slideNum',
+				pointClass: 'pointIndex',
 				pointEvent: 'mouseover',
 				auto: true,
 				delay: 4000,

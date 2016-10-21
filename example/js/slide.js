@@ -146,7 +146,7 @@
 				i = 0;
 			this.pointer = document.createElement('ul');
 			this.pointDesc = $('.biaoDesc');
-			this.pointM = $('.point');
+			// this.pointM = $('.point');
 			for (; i < this.length; i++) {
 				li = document.createElement('li');
 				li.index = i;
@@ -154,7 +154,8 @@
 				this.pointer.appendChild(li);
 			}
 			this.pointer.className = this.pointClass;
-			this.wrapper.appendChild(this.pointer);
+			$('.dala').append(this.pointer);
+			// this.wrapper.appendChild(this.pointer);
 		},
 		_initSet: function() {
 			if (this.css(this.slider, 'position') === 'static') this.slider.style.position = 'relative';
@@ -170,7 +171,7 @@
 			if (this.lazyLoad) this._loadIMG(this.elements[this.index]);
 			if (this.pointShow) this.points[this.index].className += ' ' + this.current;
 			if (this.pointShow) this.pointDesc[this.index].className += ' ' + 'ssp';
-			if (this.pointShow) this.pointM[this.index].className += ' ' + 'curentPoint';
+			//if (this.pointShow) this.pointM[this.index].className += ' ' + 'curentPoint';
 		},
 		_bind: function() {
 			var _this = this;
@@ -188,7 +189,7 @@
 		_event: function() {
 			var _this = this,
 				timer = null;
-			this.pointer = $(".pointIndex");
+			// this.pointer = $(".pointIndex");
 			this.on(this.pointer, this.pointEvent, function(e) {
 				if (_this.amimated) return;
 				var e = e || window.event,
@@ -249,11 +250,11 @@
 			this.elements[this.index].style.display = 'block';
 			if (this.lazyLoad) this._loadIMG(this.elements[this.index]);
 			if (this.pointShow) {
-				this.points[this.index].className += ' ' + this.current;
-				this.pointDesc[this.index].className += ' ' + 'ssp';
+				this.points[this.index].className = ' ' + this.current;
+				this.pointDesc[this.index].className = 'biaoDesc ' + 'ssp';
 				this.pointDesc[this.oIndex].className = this.pointDesc[this.oIndex].className.replace('ssp', '');
-				this.pointM[this.index].className += ' ' + 'curentPoint';
-				this.pointM[this.oIndex].className = this.pointM[this.oIndex].className.replace('curentPoint', '');
+				//this.pointM[this.index].className += ' ' + 'curentPoint';
+				//this.pointM[this.oIndex].className = this.pointM[this.oIndex].className.replace('curentPoint', '');
 				this.points[this.oIndex].className = this.points[this.oIndex].className.replace(this.current, '');
 			}
 			this._animate(this.elements[this.oIndex], 'left', -distance);

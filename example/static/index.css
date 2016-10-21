@@ -55,7 +55,6 @@ nav ul li{
 	color: #fff;
 	text-align: center;
 	cursor:pointer;
-	cursor: pointer;
 }
 .xxx{
 	position:relative;
@@ -180,14 +179,15 @@ video{
 	width: 670px;
 	/*width:67%;*/
 	float:right;
-	height: 601px;
-	padding-top:45px;
+	height: 470px;
 	position:absolute;
 	right:530px;
-	
+	left:40%;
+	top:50%;
+	margin-top:-235px;
+	margin-left:-350px;
 }
 .sect3-center{
-	position:absolute;
 	width: 670px;
 	height:500px;
 	margin: 0 auto;
@@ -200,6 +200,8 @@ video{
 	width:660px;
 	height:490px;
 	position:relative;
+	height:470px;
+	margin: 0 auto;
 }
 .sect3-div{
 	width:230px;
@@ -284,14 +286,16 @@ video{
 	text-align:center;
 	margin: 0 auto;
 }
-.pointIndex .point{
+.pointIndex li{
 	display:inline-block;
-	width:10px;
-	height:10px;
+	width:15px;
+	height:15px;
+	margin-right:20px;
 	background-color:#878787;
 	cursor: pointer;
+	border-radius: 50%;
 }
-.pointIndex .curentPoint {
+.pointIndex .current {
 background-color:#fff;
 }
 .sect4-title{
@@ -657,7 +661,7 @@ background-color:#fff;
 	height:8px;
 	width:8px;
 	border-radius:4px;
-	background-color:#222;
+	background-color:#878787;
 	display:inline-block;
 	margin:0 4px;
 	cursor:pointer;
