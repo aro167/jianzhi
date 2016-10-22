@@ -54,6 +54,19 @@ $(document).ready(function(){
 		if ($(window).scrollTop() > $('.section6').offset().top-200) {
 		$('#d1s').addClass("animated rubberBand");
 		$('#d2s').addClass("animated rubberBand");
+		$('.ds1').addClass("dsLater");
+		setTimeout(function(){
+			$('.ds2').addClass("dsLater");
+		}, 500);
+		setTimeout(function(){
+			$('.ds3').addClass("dsLater");
+		}, 1000);
+		setTimeout(function(){
+			$('.ds4').addClass("dsLater");
+		}, 1500);
+		setTimeout(function(){
+			$('.ds5').addClass("dsLater");
+		}, 2000);
 		
 		}
 	});

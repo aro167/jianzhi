@@ -182,10 +182,8 @@ video{
 	height: 470px;
 	position:absolute;
 	right:530px;
-	left:40%;
 	top:50%;
 	margin-top:-235px;
-	margin-left:-350px;
 }
 .sect3-center{
 	width: 670px;
@@ -195,6 +193,7 @@ video{
 	top:50%;
 	margin-left:-335px;
 	margin-top:-230px;
+	position:absolute;
 }
 .sect3-ssp{
 	width:660px;
@@ -762,26 +761,54 @@ background-color:#fff;
 	margin:0 auto;
 	position:relative;
 	top:320px;
+	overflow:hidden;
 }
 
 .ds1{
 	position:absolute;
 	left:5%;
+	top:630px;
+	transition: top 2s;
+	-moz-transition: top 2s, -moz-transform 2s; /* Firefox 4 */
+	-webkit-transition: top 2s, -webkit-transform 2s; /* Safari and Chrome */
+	-o-transition: top 2s, -o-transform 2s; /* Opera */
 }
 .ds2{
 	position:absolute;
 	left:25%;
+	top:630px;
+	transition: top 2s;
+	-moz-transition: top 2s, -moz-transform 2s; /* Firefox 4 */
+	-webkit-transition: top 2s, -webkit-transform 2s; /* Safari and Chrome */
+	-o-transition: top 2s, -o-transform 2s; /* Opera */
 }
 .ds3{
 	position:absolute;
 	left:45%;
+	top:630px;
+	transition: top 2s;
+	-moz-transition: top 2s, -moz-transform 2s; /* Firefox 4 */
+	-webkit-transition: top 2s, -webkit-transform 2s; /* Safari and Chrome */
+	-o-transition: top 2s, -o-transform 2s; /* Opera */
 }
 .ds4{
 	position:absolute;
 	left:65%;
+	top:630px;
+	transition: top 2s;
+	-moz-transition: top 2s, -moz-transform 2s; /* Firefox 4 */
+	-webkit-transition: top 2s, -webkit-transform 2s; /* Safari and Chrome */
+	-o-transition: top 2s, -o-transform 2s; /* Opera */
 }
 .ds5{
 	position:absolute;
 	left:85%;
+	top:630px;
+	transition: top 2s;
+	-moz-transition: top 2s, -moz-transform 2s; /* Firefox 4 */
+	-webkit-transition: top 2s, -webkit-transform 2s; /* Safari and Chrome */
+	-o-transition: top 2s, -o-transform 2s; /* Opera */
 }
-
+.dsLater{
+	top: 0;
+}
