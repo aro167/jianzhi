@@ -62,7 +62,50 @@ body{
 .price{
 	font-size:24px;
 }
+.bands-lists{
+	padding-top:45px;
+}
+.bands{
+	width:1000px;
+	margin:0 auto;
+	position:relative;
+	margin-top:72px;
+}
+.bands-center{
+	position:absolute;
+	top:156px;
+	width:300px;
+	display:inline-block;
+	margin-left:110px;
+}
+.bands-name{
+	font-size:30px;
+	font-weight:600;
+	margin-bottom:24px;
+}
+.bands-detail{
+	font-size:13px;
+	margin-bottom:17px;
+}
+.one-price{
+	font-size:13px;
+	margin-bottom:26px;
+}
+.bands-colordesc{
+	margin-bottom:10px;
+}
+.bands-color img{
+	display:inline-block;
+	margin-right:8px;
+	cursor:pointer;
+}
 
+.imgshow{
+	display:inline-block;
+}
+.imghide{
+	display:none;
+}
 
 
 

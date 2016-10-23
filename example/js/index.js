@@ -50,6 +50,15 @@ $(document).ready(function(){
 		$('.search').show();
 		$('.inputdis').hide();
 	});
+	var sectwidth = document.body.clientWidth-520;
+	var sectssp = sectwidth-660;
+	$(".sect3-word").css({width:sectwidth+"px"});	
+	window.onresize=function(){  
+		var sectwidth = document.body.clientWidth-520;
+		var sectssp = sectwidth-660;
+		$(".sect3-word").css({width:sectwidth+"px"});		
+   } 
+			
 	$(window).scroll(function () {
 		if ($(window).scrollTop() > $('.section6').offset().top-200) {
 		$('#d1s').addClass("animated rubberBand");

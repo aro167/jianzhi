@@ -29,6 +29,25 @@ $(document).ready(function(){
 		$('.search').show();
 		$('.inputdis').hide();
 	});
+	
+	$(".bands-color img").mouseover(function(){
+		if($("#"+ $(this).attr("data-tab")).hasClass("imgshow")){
+			return;
+		}
+		var oldshow = $("."+$(this).attr('class')+" .imgshow").removeClass("imgshow").addClass("imghide");
+		$("#" + $(this).attr("data-tab")).removeClass("imghide").addClass("imgshow");
+		
+	});
+	$("#redniupi").mouseover(function(){
+		$('.changePrice').html("899");
+	});
+	$("#heiniupi").mouseover(function(){
+		$('.changePrice').html("799");
+	});
+	$("#kaniupi").mouseover(function(){
+		$('.changePrice').html("799");
+	});
+	
 });
 
 
