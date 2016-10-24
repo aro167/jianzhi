@@ -812,3 +812,20 @@ background-color:#fff;
 .dsLater{
 	top: 0;
 }
+
+
+.aaa{
+	max-width: 1600px;
+    height: 650px;
+    width: 100%;
+}
+.bbb{
+	width: 49%;
+    float: left;
+    height: 100%;
+}
+.ccc{
+	width: 80%;
+    margin-top: 20%;
+    margin-left: 10%;
+}
