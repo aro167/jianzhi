@@ -9,6 +9,10 @@ $(function(){
 		oldActive.removeClass('active');
 		$(this).addClass('active');
 	});
+	//wanbiao
+	$(".watch_list").on("mousemove",function(){
+		$(".watchMenu").show();
+	});
 	$(".search").click(function(){
 		$("nav>ul>li").each(function(){
 			$(this).addClass("animated fadeOutLeft");
@@ -58,5 +62,8 @@ $(function(){
 		$('.searchResult').show();
 	});
 	$(".aboutWatch").css('margin-top',$(window).width()*0.131-160);
-	/*$(".aboutWatch").height($(window).width()*0.5625-160);*/
+	
+	/*$(".menuList li").on('click',function(){
+		
+	});*/
 })

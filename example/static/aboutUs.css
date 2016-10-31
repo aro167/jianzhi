@@ -48,7 +48,7 @@ input[type="search"] {-webkit-appearance: none;}
 .watchRight .watches p{ line-height:1; font-size:14px; color:#fff; padding:0 0 0 52px; margin-top:10px;}
 .watchRight .watches p span{ margin-left:91px;}
 /*watchmenu*/
-.watchMenu ul{ margin:0 auto;}
+.watchMenu ul{ width: 1200px; margin:0 auto;}
 .watchMenu ul li{ float:left; }
 .watchMenu ul li img{ text-align:center;}
 .watchMenu ul li p{ text-align:center;}
