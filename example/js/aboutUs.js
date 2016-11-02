@@ -10,8 +10,11 @@ $(function(){
 		$(this).addClass('active');
 	});
 	//wanbiao
-	$(".watch_list").on("mousemove",function(){
+	$(".watch_list,.watchMenu").on("mousemove",function(){
 		$(".watchMenu").show();
+	});
+	$(".watchMenu").on("mouseout",function(){
+		$(".watchMenu").hide();
 	});
 	$(".search").click(function(){
 		$("nav>ul>li").each(function(){

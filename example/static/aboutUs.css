@@ -48,7 +48,46 @@ input[type="search"] {-webkit-appearance: none;}
 .watchRight .watches p{ line-height:1; font-size:14px; color:#fff; padding:0 0 0 52px; margin-top:10px;}
 .watchRight .watches p span{ margin-left:91px;}
 /*watchmenu*/
-.watchMenu ul{ width: 1200px; margin:0 auto;}
-.watchMenu ul li{ float:left; }
+.watchMenu{ width: 1160px; position:absolute; top:150px; left:50%; margin-left:-580px;}
+.watchMenu ul li{ float:left; padding:0 27px;}
 .watchMenu ul li img{ text-align:center;}
 .watchMenu ul li p{ text-align:center;}
+.wd_center{ text-align:center; margin:0 auto;}
+.wd_center .imgIntro{ height:595px; position:relative;}
+.wd_center img{ display:block;}
+.wd_center .imgIntro .imgcenter{ position:absolute; top:0; left:50%; margin-left:-402px;}
+.wd_center .wat_img .introLeft,.wd_center .wat_img  .introRight{ color:#fff;  position:absolute;}
+.wd_center .wat_img .introLeft{ width:410px; top:314px; left:50%; margin-left:-410px;}
+.wd_center .wat_img .introRight{ width:385px; top:314px;left:50%; margin-left:12px;}
+.wd_center .wat_img h3{ font-size:16px; line-height:1; padding:25px 0;}
+.wd_center .wat_img p{ font-size:13px; line-height:28px;text-align:left; letter-spacing:1px; padding-left:10px;}
+.watchParts {height: 865px; position:relative; margin:0 auto;list-style-type: none; padding: 0px;}
+.watchParts h3{ font-size:34px; color:#fff; font-weight:normal; line-height:1; padding-bottom:175px;}
+.watchParts li { height:285px; position:absolute;}
+.watchParts li .watchPartImg{ vertical-align:middle;}
+.watchParts li{ float:left; position:relative;}
+.watchParts li .partTntro{ position:absolute; top:40px; text-align:center;} 
+.watchParts li .partTntro img{ display:block;}
+.probot{ width:100%; position:relative; }
+.probot img{ text-align:center; margin:0 auto; display:block;}
+.probot h3{ position:absolute; top:103px; left:230px;margin:0 0 20px; line-height:1; font-size:28px; color:#fff;}
+.probot p{ position:absolute; top:158px; left:230px;line-height:1; font-size:19px;color:#fff;}
+.footerMap{ background:#222222; color:#fff; padding:40px 0 0 180px;}
+.productTntro{ height:815px; width:100%; background:#efefef; padding-top:220px;}
+.productTntro .proLeft{ width:585px; position:absolute; left:50%; margin-left:-595px;}
+.productTntro .proRight{position:absolute; left:50%; margin-left:168px;}
+.productTntro .pTitle{ height:45px; line-height:45px; vertical-align:middle; font-size:14px; color:#000;}
+.productTntro .pTitle:before{ content:""; width:68px; height:45px; display:inline-block; vertical-align:middle;}
+.productTntro .proLeft .pTitle1:before{ background:url(../images/watch/tit1.png) left center no-repeat;}
+.productTntro .proLeft .pTitle2:before{ background:url(../images/watch/tit2.png) left center no-repeat;}
+.productTntro .proLeft .pTitle3:before{ background:url(../images/watch/tit3.png) left center no-repeat;}
+.productTntro .proLeft .pTitle4:before{ background:url(../images/watch/tit4.png) left center no-repeat;}
+.productTntro .proRight .pTitle5:before{ background:url(../images/watch/tit5.png) left center no-repeat;}
+.productTntro .proRight .pTitle6:before{ background:url(../images/watch/tit6.png) left center no-repeat;}
+.productTntro .proRight .pTitle7:before{ background:url(../images/watch/tit7.png) left center no-repeat;}
+.productTntro .proRight .pTitle8:before{ background:url(../images/watch/tit8.png) left center no-repeat;}
+.productTntro .pContent{ font-size:13px; color:#3a3a3a; line-height:1; padding-left:68px;} 
+.pd17{ padding-top:17px;}
+.watch_pri{ color:#fff; font-size:25px; text-align:center;}
+.watch_pri img{ display:inline-block;}
+.watch_pri span{ font-size:15px;}
