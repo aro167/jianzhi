@@ -37,16 +37,18 @@ input[type="search"] {-webkit-appearance: none;}
 .aboutWatchbg{ background:url(../images/watchbg.jpg) no-repeat; background-size:100%;  background-attachment:fixed; }
 .aboutWatch{ width:1066px; height:627px;margin:0 auto 0;}
 .watchLeft{ width:530px; float:left;}
+.watchLeft img:first-child{ width:311px;}
 .leftBot{ margin:0 0 0 -46px; padding-bottom:11px;}
 .watchRight{ display:inline-block; }
 .watchRight .watchRight_tit{ padding:40px 133px 50px 0; line-height:1; font-size:60px; color:#fff;}
 .watchRight .watchRight_tit span{ margin-left:72px;}
 .watchRight .watchRight_pri{ width:320px; height:40px; margin-right:140px !important;line-height:40px; padding:0 0 0 144px; background:url(../images/price.png) left center no-repeat; background-size:135px 37px; font-size:25px; color:#fff; text-align:right; }
-.watchRight .watchRight_pri span{ font-size:15px;}
+.watchRight .watchRight_pri span.fz15{ font-size:15px;}
 .watchRight .watches{ padding-left:143px; margin-top:180px;}
-.watchRight .watches img{ margin-left:25px;}
-.watchRight .watches p{ line-height:1; font-size:14px; color:#fff; padding:0 0 0 52px; margin-top:10px;}
-.watchRight .watches p span{ margin-left:91px;}
+.watchRight .watches img{ margin-left:24px; width:101px;}
+.watchRight .watches p{ line-height:1; font-size:14px; color:#fff; padding:0 0 0 9px; margin-top:10px;}
+.watchRight .watches p span{ width:128px; display:inline-block; text-align:center;}
+.watchRight .watches p span.ml91{/* margin-left:3px;*/}
 
 .wd_center{ text-align:center; margin:0 auto; position:relative;}
 .wd_center .imgIntro{ height:595px; position:relative;}
@@ -67,25 +69,25 @@ input[type="search"] {-webkit-appearance: none;}
 .watchParts li{ float:left; position:absolute;}
 .watchParts li .partTntro{ position:absolute;  left:50%;text-align:center; display:none;} 
 .watchParts li .partTntro img{ display:block;}
-.watchParts .watchList .pic_1{top:26px; left:0;}
-.watchParts .watchList .pic_2{top:25px; left:36px;}
-.watchParts .watchList .pic_3{top:0; left:93px;}
-.watchParts .watchList .pic_4{top:97px; left:194px;}
-.watchParts .watchList .pic_5{top:106px; left:242px;}
-.watchParts .watchList .pic_6{top:142px; left:259px;}
-.watchParts .watchList .pic_7{top:40px; left:264px;}
-.watchParts .watchList .pic_8{top:63px; left:321px;}
-.watchParts .watchList .pic_9{top:25px; left:340px;}
-.watchParts .watchList .pic_10{top:62px; left:454px; z-index:9;}
-.watchParts .watchList .pic_11{top:1px; left:498px;z-index:8;}
-.watchParts .watchList .pic_12{top:-1px; left:618px;}
-.watchParts .watchList .pic_13{top:54px; left:732px;}
+.watchParts .watchList .pic_1{top:26px; left:0;z-index:1;}
+.watchParts .watchList .pic_2{ width:60px; overflow:hidden;top:25px; left:36px;z-index:2;}
+.watchParts .watchList .pic_3{top:0; left:93px;z-index:21;}
+.watchParts .watchList .pic_4{top:97px; left:194px; z-index:20;}
+.watchParts .watchList .pic_5{top:106px; left:242px;z-index:19;}
+.watchParts .watchList .pic_6{top:142px; left:259px;z-index:18;}
+.watchParts .watchList .pic_7{top:40px; left:264px;z-index:17;}
+.watchParts .watchList .pic_8{top:63px; left:321px;z-index:16;}
+.watchParts .watchList .pic_9{top:25px; left:340px;z-index:15;}
+.watchParts .watchList .pic_10{top:62px; left:454px; z-index:14;}
+.watchParts .watchList .pic_11{top:1px; left:498px;z-index:13;}
+.watchParts .watchList .pic_12{top:-1px; left:618px;z-index:12;}
+.watchParts .watchList .pic_13{top:54px; left:732px;z-index:11;}
 .watchParts .watchList .pic_1 .partTntro{top:199px; margin-left: -17px;}
 .watchParts .watchList .pic_2 .partTntro{top:209px; left:10px !important;  }
 .watchParts .watchList .pic_3 .partTntro{top:229px;margin-left: -15px;}
 .watchParts .watchList .pic_4 .partTntro{top:56px;margin-left: -22px; }
 .watchParts .watchList .pic_5 .partTntro{top:68px; margin-left: -12px; }
-.watchParts .watchList .pic_6 .partTntro{top:57px; margin-left: -10px;}
+.watchParts .watchList .pic_6 .partTntro{top:57px; margin-left: -15px;}
 .watchParts .watchList .pic_7 .partTntro{top:183px; margin-left: -25px;}
 .watchParts .watchList .pic_8 .partTntro{top:120px;margin-left: -25px;}
 .watchParts .watchList .pic_9 .partTntro{top:210px;margin-left: -15px;}
@@ -121,3 +123,6 @@ input[type="search"] {-webkit-appearance: none;}
 .wd_center .wat_tit{ position:absolute; top:10px; left:50%; margin-left:-170px; width:340px; text-align:center; color:#fff; font-size:55px !important;}
 .wd_center .wat_tit span{ color:#1fab7c; margin-left:50px;}
 .partTntro p{ color:#fff; font-size:13px;}
+.watchParts .watchList li.move-left{ transform:translate3d(-10px,0,0) scale(1);}
+.watchParts .watchList li.scale{transform:scale(1.2);}
+.watchParts .watchList li.move-right{ transform:translate3d(10px,0,0) scale(1);}
