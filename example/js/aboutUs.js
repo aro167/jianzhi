@@ -5,17 +5,28 @@ $(function(){
 		if($(this).hasClass("active")){
 			return;
 		}
+		//$(".watchMenu").hide();
 		var oldActive = $('.active');
 		oldActive.removeClass('active');
 		$(this).addClass('active');
 	});
+	
 	//wanbiao
-	$(".watch_list,.watchMenu").on("mousemove",function(){
-		$(".watchMenu").show();
-	});
-	$(".watch_list").on("mouseout",function(){
+
+	$("nav>ul>li").not(".watchMenu").mouseover(function(){
 		$(".watchMenu").hide();
 	});
+	$(".watch_list,.watchMenu").on("mouseenter",function(){
+		$(".watchMenu").show();
+	})	
+	$(".watchMenu").hover(function(){ 
+		$(".watchMenu").show();
+		},
+		function(){
+		 $(".watchMenu").hide();
+		}
+	   );
+	
 	$(".search").click(function(){
 		$("nav>ul>li").each(function(){
 			$(this).addClass("animated fadeOutLeft");
@@ -65,7 +76,16 @@ $(function(){
 		$('.searchResult').show();
 	});
 	$(".aboutWatch").css('margin-top',$(window).width()*0.131-160);
-	
+	$(".watchParts .watchList li").on('mouseover',function(){
+		var width=$(this).children("img").width();
+		$(this).children("img").width(width*1.2);
+		$(this).children(".partTntro").show();
+		$(this).siblings().children(".partTntro").hide();
+	});
+	$(".watchParts .watchList li").on('mouseout',function(){
+		var width=$(this).children("img").width();
+		$(this).children("img").width(width/1.2);
+	});
 	/*$(".menuList li").on('click',function(){
 		
 	});*/
