@@ -13,7 +13,7 @@ $(function(){
 	$(".watch_list,.watchMenu").on("mousemove",function(){
 		$(".watchMenu").show();
 	});
-	$(".watchMenu").on("mouseout",function(){
+	$(".watch_list").on("mouseout",function(){
 		$(".watchMenu").hide();
 	});
 	$(".search").click(function(){
