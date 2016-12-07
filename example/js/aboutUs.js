@@ -72,6 +72,19 @@ $(function(){
 		$(this).nextAll().removeClass("move-right");
 		$(this).removeClass("scale");*/
 	});
+	/*新增*/
+	$(".watchParts .watchList li.small_pic").on('mouseover',function(){
+		var width=$(".big_pic").children("img").width();
+		$(".big_pic").children("img").width(width*1.2);
+		$(".big_pic").children(".partTntro").show();
+		$(".big_pic").siblings().children(".partTntro").hide();
+	});
+	$(".watchParts .watchList li.small_pic").on('mouseout',function(){
+		var width=$(".big_pic").children("img").width();
+		$(".big_pic").children(".partTntro").hide();
+		$(".big_pic").children("img").width(width/1.2);
+	});
+	/*新增结束*/
 	$(".watches img").live('click',function(){
 		var index=$(this).index();
 		var intro=$(".watches p span:eq("+index+")").html();

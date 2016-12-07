@@ -67,10 +67,11 @@ input[type="search"] {-webkit-appearance: none;}
 .watchParts li { height:285px; position:absolute;}
 .watchParts li .watchPartImg{ vertical-align:middle;}
 .watchParts li{ float:left; position:absolute;}
-.watchParts li .partTntro{ position:absolute;  left:50%;text-align:center; display:none;} 
+.watchParts li .partTntro,.big_pic .partTntro{ position:absolute;  left:50%;text-align:center; display:none;} 
 .watchParts li .partTntro img{ display:block;}
 .watchParts .watchList .pic_1{top:26px; left:0;z-index:1;}
-.watchParts .watchList .pic_2{ width:60px; overflow:hidden;top:25px; left:36px;z-index:2;}
+.watchParts .watchList .small_pic{ width:60px; /*overflow:hidden;*/top:25px; left:36px;z-index:99;}
+.watchParts .watchList .big_pic{top:25px; left:36px;z-index:99;}
 .watchParts .watchList .pic_3{top:0; left:93px;z-index:21;}
 .watchParts .watchList .pic_4{top:97px; left:194px; z-index:20;}
 .watchParts .watchList .pic_5{top:106px; left:242px;z-index:19;}
@@ -83,7 +84,7 @@ input[type="search"] {-webkit-appearance: none;}
 .watchParts .watchList .pic_12{top:-1px; left:618px;z-index:12;}
 .watchParts .watchList .pic_13{top:54px; left:732px;z-index:11;}
 .watchParts .watchList .pic_1 .partTntro{top:199px; margin-left: -17px;}
-.watchParts .watchList .pic_2 .partTntro{top:209px; left:10px !important;  }
+.watchParts .watchList .pic_2 .partTntro{top:209px; left:50% !important; }
 .watchParts .watchList .pic_3 .partTntro{top:229px;margin-left: -15px;}
 .watchParts .watchList .pic_4 .partTntro{top:56px;margin-left: -22px; }
 .watchParts .watchList .pic_5 .partTntro{top:68px; margin-left: -12px; }
